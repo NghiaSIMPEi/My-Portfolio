@@ -1,0 +1,97 @@
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255)  ;
+    font-family: Arial, sans-serif;
+    position: initial;
+    background-origin: padding-box;
+    border-radius: 30vh;
+}
+
+.menu {
+    background-color: rgb(6, 2, 16)  ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-toggle {
+    position: relative;
+    background: none;
+    border: none;
+    color: rgb(255,255,255);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgb(255, 255, 255)  ;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.menu a {
+    color: rgb(255, 255, 255)  ;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin: 20px 20px;
+    .caption {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+        margin: 20px 20px;
+    }
+}
+
+.About, .Projects, .Skills, .Contact {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin: 20px 20px;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(6, 2, 16);
+    flex-direction: column;
+    width: max-content;
+    min-width: 120px;
+    z-index: 1000;
+}
+.menu-items.active {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .menu-items a {
+        margin: 10px 0;
+    }
+}
